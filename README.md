@@ -1,0 +1,1 @@
+[lazyload npm page](https://www.npmjs.com/package/vanilla-lazyload)

@@ -1,0 +1,136 @@
+@import "part"
+@import "normalize"
+@import "libs"
+@import "vars"
+@import "fonts"
+
+*
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+    font-size: 10px
+
+body
+    overflow-x: hidden
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    font: 10px "Montserrat-ex"
+    min-height: 100vh
+    min-width: 280px
+
+.main
+    width: 100%
+    background: #000
+    background-image: linear-gradient(to right top, #051937, #003d62, #00626c, #00854d, #6e9f00) 
+    // background: url(../img/cold-bg.jpg) no-repeat center bottom / cover
+    transition: all 0.3s ease
+
+#app.warm 
+    // background: url(../img/warm-bg.jpg) no-repeat center bottom / cover
+
+main 
+    min-height: 100vh
+    padding: 25px
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75) )
+
+
+.search-box 
+    width: 100%
+    margin-bottom: 30px
+
+
+.search-box .search-bar 
+    position: relative
+    transform: scale(.98)
+    display: block
+    width: 100%
+    padding: 10px 15px
+
+    color: #313131
+    font-size: 16px
+
+    appearance: none
+    outline: none
+    border: none
+    background: none
+
+    background-color: rgba(255, 255, 255, 0.5)
+    border-radius: 8px
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25)
+
+    transition: all .3s cubic-bezier(0.95,-0.06, 0.11, 1.2)
+
+.search-box .search-bar::placeholder 
+    font-family: "Montserrat"
+
+
+.search-box .search-bar:focus 
+    transform: scale(1)
+    background-color: rgba(255, 255, 255, 0.75)
+    border-radius: 4px
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25)
+
+
+.location-box .location 
+    margin-bottom: 10px
+    color: #fff
+    font-size: 24px
+    font-weight: 500
+    text-align: center
+    text-shadow: 1px 3px rgba(0, 0, 0, 0.25)
+
+.location-box .date 
+    margin-bottom: 15px
+    color: #fff
+    font-size: 18px
+    font-weight: 300
+    font-style: italic
+    text-align: center
+
+
+.weather-box 
+    margin: 15px 0
+    text-align: center
+
+
+.weather-wrap
+    opacity: 0
+    transition: all .4s cubic-bezier(0.95,-0.06, 0.11, 1.2)
+    transform: scale(0.8)
+    &.active
+        opacity: 1
+        transform: scale(1)
+
+
+.weather-box .temp 
+    display: inline-block
+    padding: 10px 25px
+    margin-bottom: 10px
+
+    color: #fff
+    font-size: 62px
+    font-weight: 900
+
+    text-shadow: 3px 6px rgba(0, 0, 0, 0.25)
+    background-color: rgba(255, 255, 255, 0.25)
+    border-radius: 16px
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.25)
+   
+
+
+.weather-box .weather 
+    color: #fff
+    font-size: 38px
+    font-weight: 700
+    font-style: italic
+    text-shadow: 3px 6px rgba(0, 0, 0, 0.25)
+
+.weather-box .weather::first-letter 
+    text-transform: uppercase
+
+   
+@import "media"
