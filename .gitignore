@@ -1,2 +1,7 @@
+app/
+sass/
 node_modules/
 .vscode/
+gulpfile.js
+package.json
+package-lock.json
