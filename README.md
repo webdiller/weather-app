@@ -1,1 +1,1 @@
-[lazyload npm page](https://www.npmjs.com/package/vanilla-lazyload)
+[github pages link](https://webdiller.github.io/weather-app/)
